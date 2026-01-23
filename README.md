@@ -26,7 +26,7 @@ Identification of high and low performing business segments
 
 The study is driven by business-oriented questions translated into structured SQL queries and visualized through an interactive dashboard.
 
-$ Methodology
+# Methodology
 
 The project follows a systematic analytical approach:
 
