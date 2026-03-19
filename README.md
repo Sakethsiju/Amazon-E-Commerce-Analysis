@@ -1,99 +1,112 @@
-# Amazon E-Commerce Sales Analytics using SQL and Power BI
+# Amazon E-Commerce Sales Analysis
 
-This project presents a structured data analytics study on Amazon e-commerce transactional data, 
-performed using SQL for relational analysis and Power BI for business intelligence reporting. 
-The work demonstrates how raw operational data can be translated into actionable business insights through systematic querying, aggregation, and visualization.
+**Tools:** SQL · Power BI · Excel  
+**Dataset:** 112,991 orders | 2015–2020  
+**Domain:** E-Commerce · Business Intelligence · Sales Analytics
 
-# Project Context
+---
 
-E-commerce platforms accumulate large volumes of data across customers, products, orders, categories, and regions. Without analytical processing, this data remains operational rather than strategic.
+## 📌 Project Overview
 
-The purpose of this project is to analyze such transactional data to uncover patterns in sales performance, customer behavior, product demand, and regional contribution to revenue.
+This project analyzes **112,991 Amazon orders** spanning 5 years (2015–2020) to uncover revenue opportunities, identify underperforming categories, and expose logistics inefficiencies. Every finding is tied to a direct business recommendation.
 
-# Analytical Scope
+---
 
-The analysis focuses on examining:
+## 🎯 Business Problems Solved
 
-Sales performance across products and categories
+| # | Business Question | Finding |
+|---|---|---|
+| 1 | Which year drove the most growth? | 2020 was the **only growth year** — $24.0M revenue, +43% surge |
+| 2 | Which product category is underperforming? | Health & Beauty at $11.9M vs $38.5M benchmark — **$26.6M gap** |
+| 3 | Is international shipping causing customer loss? | **4× delay** — 15 days international vs 3.5 days domestic across 39,000 customers |
 
-Customer purchasing patterns and order behavior
+---
 
-Regional distribution of revenue
+## 🔍 Key Findings
 
-Time-based trends in orders and sales
+### 1. Revenue Analysis
+- Analyzed revenue trends across 2015–2020
+- **2020 flagged as the only growth year** ($24.0M, +43%)
+- Built a data-backed framework to identify and replicate the triggers behind the 2020 surge
+- All other years showed flat or declining revenue — signalling structural issues in product or marketing strategy
 
-Identification of high and low performing business segments
+### 2. Category Gap Analysis
+- Benchmarked all product categories against top performer
+- **Health & Beauty** identified as the weakest category at $11.9M
+- Quantified the **$26.6M revenue gap** against the $38.5M category benchmark
+- Recommended targeted promotional intervention to close the gap
 
-The study is driven by business-oriented questions translated into structured SQL queries and visualized through an interactive dashboard.
+### 3. Shipping & Logistics Analysis
+- Compared domestic vs international shipping times
+- Discovered a **4× international shipping delay** — 15 days vs 3.5 days domestic
+- Quantified the **retention risk across 39,000 international customers**
+- Delivered a logistics optimization recommendation with projected impact on customer retention
 
-# Methodology
+---
 
-The project follows a systematic analytical approach:
+## 🛠️ Tools & Techniques
 
-Understanding relational data structure and dependencies
+| Tool | Usage |
+|---|---|
+| **SQL** | Data extraction, filtering, aggregation, joins |
+| **Power BI** | Interactive dashboard, revenue trend visualization, category comparison |
+| **Excel** | Data cleaning, pivot tables, preliminary analysis |
 
-Applying SQL techniques such as joins, aggregation, filtering, and subqueries
+---
 
-Converting query outputs into meaningful metrics
+## 📁 Project Structure
 
-Designing a Power BI dashboard to represent insights for business users
+```
+Amazon-E-Commerce-Analysis/
+│
+├── data/
+│   └── amazon_orders.csv          # Raw dataset (112,991 orders)
+│
+├── sql/
+│   └── amazon_analysis.sql        # All SQL queries used
+│
+├── dashboard/
+│   └── amazon_dashboard.pbix      # Power BI dashboard file
+│
+└── README.md
+```
 
-Interpreting results in the context of decision-making
+---
 
-# SQL Analysis
+## 📊 Dashboard Preview
 
-SQL is used extensively to perform relational and aggregated analysis on the dataset. The work includes:
+> *Add a screenshot of your Power BI dashboard here*
+> *(Go to Power BI → Export → Screenshot → Upload to this repo)*
 
-Multi-table joins to combine customer, product, and order information
+---
 
-Grouping and aggregation to measure revenue, quantities, and performance metrics
+## 💡 Business Recommendations
 
-Subqueries for advanced business scenarios
+1. **Replicate 2020 growth triggers** — investigate what drove the +43% surge (COVID demand, promotions, new categories) and build a repeatable playbook
+2. **Invest in Health & Beauty** — targeted promotions and better product curation could close the $26.6M gap
+3. **Overhaul international logistics** — partner with faster carriers or set up regional warehouses to bring 15-day delivery under 7 days
 
-Time-based analysis using date functions
+---
 
-Structured queries aimed at solving real business problems
+## 🚀 How to Run This Project
 
-# Dashboard and Visualization
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Sakethsiju/Amazon-E-Commerce-Analysis.git
+   ```
+2. Open `amazon_analysis.sql` in any SQL editor (MySQL Workbench, pgAdmin, DBeaver)
+3. Load `amazon_orders.csv` as your data source
+4. Run queries section by section
+5. Open `amazon_dashboard.pbix` in Power BI Desktop to view the dashboard
 
-The Power BI dashboard is designed to communicate insights clearly and interactively. It provides visibility into:
+---
 
-Revenue and order trends over time
+## 📫 Connect with Me
 
-Comparative performance of categories and products
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/enugu-saketh-reddy-21k91a6631)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sakethsiju63@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sakethsiju)
 
-Regional sales contribution
+---
 
-Customer activity patterns
-
-Key performance indicators derived from the analysis
-
-The dashboard is built to support exploration and data-driven decision-making.
-
-# Key Insights
-
-The analysis highlights:
-
-Products and categories that significantly contribute to revenue
-
-Regions with strong and weak sales performance
-
-Observable trends in customer ordering behavior
-
-Time-based sales patterns useful for forecasting and planning
-
-Areas where performance improvement opportunities exist
-
-# Tools and Technologies
-
-SQL for querying and relational analysis
-
-Power BI for visualization and dashboard development
-
-DAX for calculated measures and metrics
-
-Relational data modeling principles
-
-# Project Outcome
-
-This project demonstrates the end-to-end workflow of a data analyst working with business data — from raw transactional records to structured insights and executive-level reporting. It serves as a practical representation of analytical, querying, and visualization skills applicable to Data Analyst and Business Intelligence roles.
+*Part of my Data Analyst portfolio — analyzing real-world datasets to drive business decisions.*
