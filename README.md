@@ -70,14 +70,6 @@ Amazon-E-Commerce-Analysis/
 │
 └── README.md
 ```
-
----
-
-## 📊 Dashboard Preview
-
-> *Add a screenshot of your Power BI dashboard here*
-> *(Go to Power BI → Export → Screenshot → Upload to this repo)*
-
 ---
 
 ## 💡 Business Recommendations
